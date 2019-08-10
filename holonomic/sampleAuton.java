@@ -19,11 +19,10 @@ public class sampleAuton extends LinearOpMode {
 
     @Override
     public void runOpMode() throws InterruptedException {
-        frontLeft = hardwareMap.dcMotor.get("motor_4");
-        frontRight = hardwareMap.dcMotor.get("motor_1");
-        backRight = hardwareMap.dcMotor.get("motor_2");
-        backLeft = hardwareMap.dcMotor.get("motor_3");
-        intake = hardwareMap.dcMotor.get("motor_5");
+        frontLeft = hardwareMap.dcMotor.get("frontLeft");
+        frontRight = hardwareMap.dcMotor.get("frontRight");
+        backRight = hardwareMap.dcMotor.get("backRight");
+        backLeft = hardwareMap.dcMotor.get("backLeft");
 
         frontLeft.setPower(0);
         frontRight.setPower(0);

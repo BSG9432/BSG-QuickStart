@@ -18,11 +18,10 @@ public class teleOp extends OpMode {
     @Override
     public void init() {
 
-        frontLeft = hardwareMap.dcMotor.get("motor_4");
-        frontRight = hardwareMap.dcMotor.get("motor_1");
-        backRight = hardwareMap.dcMotor.get("motor_2");
-        backLeft = hardwareMap.dcMotor.get("motor_3");
-        intake = hardwareMap.dcMotor.get("motor_5");
+        frontLeft = hardwareMap.dcMotor.get("frontLeft");
+        frontRight = hardwareMap.dcMotor.get("frontRight");
+        backRight = hardwareMap.dcMotor.get("backRight");
+        backLeft = hardwareMap.dcMotor.get("backLeft");
 
         backLeft.setDirection(DcMotor.Direction.REVERSE);
         backRight.setDirection(DcMotor.Direction.REVERSE);
